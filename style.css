@@ -1,67 +1,39 @@
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* ===== BODY ===== */
-body {
-  background: linear-gradient(180deg, #000000, #050b1a);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  background:#000;
+  color:white;
+  font-family:Arial, sans-serif;
 }
 
-/* ===== HEADER ===== */
-h1 {
-  text-align: center;
-  padding: 20px 10px 5px;
-  color: #00c8ff;
+h1{
+  text-align:center;
+  padding:20px 0 5px;
+  color:#00c8ff;
 }
 
-h2 {
-  text-align: center;
-  padding: 10px;
+.game{
+  margin:20px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#0b0f1a;
 }
 
-/* ===== GAME CONTAINER ===== */
-.game {
-  background: #0b0f1a;
-  margin: 20px;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid #1e263a;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+.game h2{
+  text-align:center;
+  padding:10px;
+  background:#000;
 }
 
-/* ===== IMAGE FIX (IMPORTANT) ===== */
-.game img {
-  width: 100%;
-  height: 180px;        /* 🔥 SAME HEIGHT FOR ALL */
-  object-fit: cover;   /* IMAGE CROP */
-  display: block;
+/* 🔥 REAL IMAGE FIX */
+.game img{
+  width:100%;
+  height:160px;        /* 👈 aur chhota kar diya */
+  max-height:160px;    /* 👈 force limit */
+  object-fit:cover;
+  display:block;
 }
-
-/* ===== BUTTON (FOR FUTURE USE) ===== */
-.btn {
-  display: inline-block;
-  margin: 12px auto 16px;
-  padding: 10px 18px;
-  background: #ff3d00;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #e53935;
-}
-
-/* ===== DESKTOP SUPPORT ===== */
-@media (min-width: 768px) {
-  .game {
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  }
