@@ -1,74 +1,67 @@
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #000000, #0b0f1a);
+  background: linear-gradient(180deg, #000000, #050b1a);
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
-header {
+/* ===== HEADER ===== */
+h1 {
   text-align: center;
-  padding: 20px 10px;
-}
-
-header h1 {
+  padding: 20px 10px 5px;
   color: #00c8ff;
-  font-size: 30px;
 }
 
-header p {
-  opacity: 0.8;
-}
-
-/* GAME SECTION */
-.games {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-/* CARD */
-.game-card {
-  background: #0b0f1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 200, 255, 0.15);
-}
-
-/* IMAGE FIX (IMPORTANT PART) */
-.game-card img {
-  width: 100%;
-  height: 180px;     /* SAME HEIGHT */
-  object-fit: cover;/* CROP PROPERLY */
-  display: block;
-}
-
-/* TITLE */
-.game-card h3 {
-  padding: 10px;
-  font-size: 18px;
+h2 {
   text-align: center;
+  padding: 10px;
 }
 
-/* BUTTON */
-.btn {
+/* ===== GAME CONTAINER ===== */
+.game {
+  background: #0b0f1a;
+  margin: 20px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #1e263a;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* ===== IMAGE FIX (IMPORTANT) ===== */
+.game img {
+  width: 100%;
+  height: 180px;        /* 🔥 SAME HEIGHT FOR ALL */
+  object-fit: cover;   /* IMAGE CROP */
   display: block;
-  margin: 10px auto 15px;
+}
+
+/* ===== BUTTON (FOR FUTURE USE) ===== */
+.btn {
+  display: inline-block;
+  margin: 12px auto 16px;
   padding: 10px 18px;
   background: #ff3d00;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  width: fit-content;
 }
 
 .btn:hover {
   background: #e53935;
+}
+
+/* ===== DESKTOP SUPPORT ===== */
+@media (min-width: 768px) {
+  .game {
+    max-width: 600px;
+    margin: 20px auto;
+  }
   }
