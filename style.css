@@ -41,9 +41,17 @@ h1{
 }
 
 /* IMAGE CONTROL — YAHI FIX HAI */
+.game{
+  margin:20px;
+  border:2px solid white;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+/* IMAGE FIX — YAHI MAIN POINT HAI */
 .game img{
   width:100%;
-  height:220px;           /* 👈 fixed height */
-  object-fit:cover;       /* 👈 crop karega, badi nahi hogi */
+  height:200px;          /* 👈 image ki height fix */
+  object-fit:cover;      /* 👈 crop karega, stretch nahi */
   display:block;
 }
