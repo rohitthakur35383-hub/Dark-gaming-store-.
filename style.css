@@ -28,12 +28,9 @@ h1{
   padding:10px;
   background:#000;
 }
-
-/* 🔥 REAL IMAGE FIX */
 .game img{
   width:100%;
-  height:160px;        /* 👈 aur chhota kar diya */
-  max-height:160px;    /* 👈 force limit */
-  object-fit:cover;
+  aspect-ratio: 16 / 9;   /* 👈 magic line */
+  object-fit: cover;
   display:block;
 }
