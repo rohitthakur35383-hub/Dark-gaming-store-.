@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Games</title>
+  <style>
+    body{
+      margin:0;
+      background:black;
+      color:white;
+      font-family:Arial, sans-serif;
+    }
 
+    h1{
+      text-align:center;
+      color:#00e5ff;
+      margin:20px 0;
+    }
+
+    .games{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      gap:15px;
+      padding:20px;
+    }
+
+    .card{
+      background:#111;
+      border:1px solid #333;
+      border-radius:10px;
+      padding:15px;
+      text-align:center;
+    }
+
+    .card img{
+      width:100%;
+      height:120px;
+      object-fit:cover;
+      border-radius:8px;
+    }
+
+    .card h3{
+      font-size:14px;
+      margin:10px 0;
+    }
+
+    .download{
+      display:inline-block;
+      background:red;
+      color:white;
+      padding:8px 15px;
+      border-radius:20px;
+      text-decoration:none;
+      font-size:14px;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🎮 Fun Games</h1>
+
+<div class="games">
+
+  <div class="card">
+    <img src="images/fun.jpg">
+    <h3>Subway Surfers</h3>
+    <a class="download" href="https://play.google.com/store" target="_blank">Download</a>
+  </div>
+
+  <div class="card">
+    <img src="images/fun.jpg">
+    <h3>Temple Run</h3>
+    <a class="download" href="https://play.google.com/store" target="_blank">Download</a>
+  </div>
+
+  <div class="card">
+    <img src="images/fun.jpg">
+    <h3>Talking Tom</h3>
+    <a class="download" href="https://play.google.com/store" target="_blank">Download</a>
+  </div>
+
+  <div class="card">
+    <img src="images/fun.jpg">
+    <h3>Hill Climb</h3>
+    <a class="download" href="https://play.google.com/store" target="_blank">Download</a>
+  </div>
+
+</div>
+
+</body>
+  </html>
