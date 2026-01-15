@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dark Gaming Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Gaming Store</title>
 
-  <style>
-    body{
-      background:black;
-      color:white;
-      font-family:Arial, sans-serif;
-      margin:0;
-    }
+<style>
+body{
+  margin:0;
+  background:#000;
+  font-family:Arial, sans-serif;
+  color:white;
+}
 
-    /* NAVBAR */
-    .navbar{
-      background:#111;
-      padding:12px;
-      text-align:center;
-      position:sticky;
-      top:0;
-    }
-
-    .navbar a{
-      color:white;
-      margin:0 15px;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:16px;
-    }
-
-    .navbar a:hover{
-      color:#00e5ff;
-    }
-
-    /* TITLE */
-    h1{
-      text-align:center;
-      color:#00e5ff;
-      margin:20px 0;
-    }
-
-    /* GAME CARD */
-    .game{
-      margin:20px;
-      border:2px solid #333;
-      border-radius:8px;
-      overflow:hidden;
-    }
-
-    .game h2{
-      margin:0;
-      padding:10px;
-      background:#111;
-      text-align:center;
-    }
-
-    .game img{
-      width:100%;
-      height:auto;
-      display:block;
-    }
-  </style>
-</head>
-.enter-btn{
-  width:100%;
+/* NAVBAR */
+nav{
+  background:#111;
   padding:12px;
-  background:#00e5ff;
-  color:black;
+  text-align:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  color:#00e5ff;
+  margin:15px 0;
+}
+
+/* GAME CARD */
+.game{
+  margin:20px;
+  border:2px solid #222;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+/* CATEGORY NAME */
+.game h2{
+  margin:0;
+  padding:8px;
+  background:#111;
+  text-align:center;
+  font-size:18px;
+}
+
+/* IMAGE BOX */
+.img-box{
+  position:relative;
+  width:100%;
+  height:200px;      /* 🔥 sab images same height */
+}
+
+/* IMAGE */
+.img-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* 🔥 image crop hogi, stretch nahi */
+  display:block;
+}
+
+/* ENTER BUTTON */
+.enter-btn{
+  position:absolute;
+  bottom:15px;
+  left:50%;
+  transform:translateX(-50%);
+  background:red;
+  color:white;
   border:none;
+  padding:10px 30px;
   font-size:16px;
   font-weight:bold;
+  border-radius:25px;
   cursor:pointer;
 }
+</style>
+</head>
 
-.enter-btn:hover{
-  background:#00bcd4;
-}
 <body>
 
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Games</a>
-    <a href="#">Contact</a>
-  </div>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Games</a>
+  <a href="#">Contact</a>
+</nav>
 
-  <h1>Dark Gaming Store</h1>
+<h1>Dark Gaming Store</h1>
 
-  <!-- GAMES -->
-  <div class="game">
-    <h2>Fun Games</h2>
+<!-- FUN GAMES -->
+<div class="game">
+  <h2>Fun Games</h2>
+  <div class="img-box">
     <img src="images/fun.jpg">
-  <button class="enter-btn">ENTER</button>
+    <button class="enter-btn">ENTER</button>
   </div>
+</div>
 
-  <div class="game">
-    <h2>Anime</h2>
+<!-- ANIME -->
+<div class="game">
+  <h2>Anime</h2>
+  <div class="img-box">
     <img src="images/anime.jpg">
-<button class="enter-btn">ENTER</button>
+    <button class="enter-btn">ENTER</button>
   </div>
+</div>
 
-  <div class="game">
-    <h2>Action</h2>
+<!-- ACTION -->
+<div class="game">
+  <h2>Action</h2>
+  <div class="img-box">
     <img src="images/action.jpg">
-  <button class="enter-btn">ENTER</button>
+    <button class="enter-btn">ENTER</button>
   </div>
+</div>
 
-  <div class="game">
-    <h2>Racing</h2>
+<!-- RACING -->
+<div class="game">
+  <h2>Racing</h2>
+  <div class="img-box">
     <img src="images/racing.jpg">
- <button class="enter-btn">ENTER</button>
+    <button class="enter-btn">ENTER</button>
   </div>
-
-  <div class="game">
-    <h2>Music</h2>
-    <img src="images/music.jpg">
-<button class="enter-btn">ENTER</button>
-  </div>
+</div>
 
 </body>
-                </html>
+</html>
